@@ -29,7 +29,7 @@ void loop()
     ) {
       led = !led;
     }
-    Serial.print(led);
+    Serial.write(led);
   }
   digitalWrite(LED_PIN, led);
 }
